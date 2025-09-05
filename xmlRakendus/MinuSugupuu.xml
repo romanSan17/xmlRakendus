@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<inimene saasta ="1955">
+	<nimi>Galina</nimi>
+	<lapsed>
+		<inimene saasta ="1977">
+			<nimi>Igor</nimi>
+			<lapsed>
+				<inimene saasta="2002">
+					<nimi>Nikita</nimi>
+				</inimene>
+				<inimene saasta="2002">
+					<nimi>Ksenia</nimi>
+				</inimene>
+			</lapsed>
+		</inimene>
+		<inimene saasta ="1980">
+			<nimi>Zhenya</nimi>
+			<lapsed>
+				<inimene saasta="2005">
+					<nimi>Roman</nimi>
+				</inimene>
+				<inimene saasta="2011">
+					<nimi>Matvey</nimi>
+				</inimene>
+				<inimene saasta="2015">
+					<nimi>Stepan</nimi>
+				</inimene>
+			</lapsed>
+		</inimene>
+		<inimene saasta ="1983">
+			<nimi>Elena</nimi>
+			<lapsed>
+				<inimene saasta="2011">
+					<nimi>Mihail</nimi>
+				</inimene>
+				<inimene saasta="2016">
+					<nimi>Egor</nimi>
+				</inimene>
+			</lapsed>
+		</inimene>
+	</lapsed>
+</inimene>
