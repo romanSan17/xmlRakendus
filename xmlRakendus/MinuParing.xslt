@@ -5,78 +5,66 @@
     <xsl:output method="xml" indent="yes"/>
 
     <xsl:template match="/">
-		<strong>Näitme kõik nimed</strong>
-		<ul>
-			<xsl:for-each select="//inimene">
-				<!--descending - suuremast väiksemani-->
-				<xsl:sort select="@saasta" order="descending"/>
-				<li>
-					<xsl:value-of select="nimi"/>
-					,
-					<xsl:value-of select="@saasta"/>
-					: <i>
-						<xsl:value-of select="concat(nimi, ', ', @saasta, '.')"/>
-					</i>
-					, vanus:
-					<xsl:value-of select ="2025-@saasta"/>
-				</li>
-			</xsl:for-each>
-		</ul>
+
 		<strong>Kõik andmed tabelina</strong>
-		<table border="1">
-			<th>Nimi</th>
-			<th>Laps</th>
-			<th>Sünnipäev</th>
-			<th>Vanus</th>
-			<xsl:for-each select="//inimene">
-				<tr>
-					<td>
-						<xsl:value-of select="../../nimi"/>
-					</td>
-					<td>
-						<xsl:value-of select="nimi"/>
-					</td>
-					<td>
-						<xsl:value-of select="@saasta"/>
-					</td>
-					<td>
-						<xsl:value-of select="2025-@saasta"/>
-					</td>
-				</tr>
-			</xsl:for-each>
-		</table>
+		<strong>punase tekstiga nimed, milles on täht „R”, kollased lahtrid tähendavad, et inimesel on rohkem kui 1 laps</strong>
 
 		<table border="1">
 			<tr>
+				<th>Nimi</th>
 				<th>Laps</th>
-				<th>Vanema sünniaasta</th>
-				<th>Lapse sünniaasta</th>
+				<th>Sünnipäev</th>
+				<th>Vanus</th>
 				<th>Vanem oli vana</th>
+				<th>Elukoht</th>
 			</tr>
+
 			<xsl:for-each select="//inimene">
+
+				<xsl:variable name="kidsCount" select="count(lapsed/inimene)"/>
+
 				<tr>
+					<xsl:if test="$kidsCount = 2 or $kidsCount = 3">
+						<xsl:attribute name="style">background-color:yellow;</xsl:attribute>
+					</xsl:if>
 
 					<td>
+						<xsl:attribute name="style">
+							<xsl:if test="contains(translate(nimi, 'r', 'R'), 'R')">
+								<xsl:text>color:red;</xsl:text>
+							</xsl:if>
+						</xsl:attribute>
 						<xsl:value-of select="nimi"/>
 					</td>
 
-
 					<td>
-						<xsl:value-of select="../../@saasta"/>
+						<xsl:for-each select="lapsed/inimene">
+							<xsl:value-of select="nimi"/>
+							<xsl:if test="position()!=last()">, </xsl:if>
+						</xsl:for-each>
 					</td>
-
 
 					<td>
 						<xsl:value-of select="@saasta"/>
 					</td>
 
+					<td>
+						<xsl:value-of select="2025 - @saasta"/>
+					</td>
 
 					<td>
-						<xsl:value-of select="@saasta - ../../@saasta"/>
+						<xsl:if test="ancestor::inimene">
+							<xsl:value-of select="@saasta - ancestor::inimene[1]/@saasta"/>
+						</xsl:if>
+					</td>
+					<td>
+						<xsl:value-of select="elukoht"/>
 					</td>
 				</tr>
 			</xsl:for-each>
 		</table>
+
+
 
 
 		<table border="1">

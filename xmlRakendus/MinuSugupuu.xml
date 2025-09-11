@@ -1,40 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <inimene saasta ="1955">
 	<nimi>Galina</nimi>
+	<elukoht>Yoshkar-ola</elukoht>
 	<lapsed>
 		<inimene saasta ="1977">
 			<nimi>Igor</nimi>
+			<elukoht>Yoshkar-ola</elukoht>
 			<lapsed>
 				<inimene saasta="2002">
 					<nimi>Nikita</nimi>
+					<elukoht>Moscow</elukoht>
 				</inimene>
 				<inimene saasta="2002">
 					<nimi>Ksenia</nimi>
+					<elukoht>Yoshkar-ola</elukoht>
 				</inimene>
 			</lapsed>
 		</inimene>
 		<inimene saasta ="1980">
 			<nimi>Zhenya</nimi>
+			<elukoht>Yoshkar-ola</elukoht>
 			<lapsed>
 				<inimene saasta="2005">
 					<nimi>Roman</nimi>
+					<elukoht>Tallinn</elukoht>
 				</inimene>
 				<inimene saasta="2011">
 					<nimi>Matvey</nimi>
+					<elukoht>Yoshkar-ola</elukoht>
 				</inimene>
 				<inimene saasta="2015">
 					<nimi>Stepan</nimi>
+					<elukoht>Yoshkar-ola</elukoht>
 				</inimene>
 			</lapsed>
 		</inimene>
 		<inimene saasta ="1983">
 			<nimi>Elena</nimi>
+			<elukoht>Yoshkar-ola</elukoht>
 			<lapsed>
 				<inimene saasta="2011">
 					<nimi>Mihail</nimi>
+					<elukoht>Yoshkar-ola</elukoht>
 				</inimene>
 				<inimene saasta="2016">
 					<nimi>Egor</nimi>
+					<elukoht>Yoshkar-ola</elukoht>
 				</inimene>
 			</lapsed>
 		</inimene>
