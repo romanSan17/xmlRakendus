@@ -63,6 +63,20 @@
 				</tr>
 			</xsl:for-each>
 		</table>
+		
+		<strong>Elukoht ja elanike arv</strong>
+        <table border="1">
+            <tr>
+                <th>Elukoht</th>
+                <th>Inimeste arv</th>
+            </tr>
+            <xsl:for-each select="//inimene[generate-id() = generate-id(key('byPlace', elukoht)[1])]">
+                <tr>
+                    <td><xsl:value-of select="elukoht"/></td>
+                    <td><xsl:value-of select="count(key('byPlace', elukoht))"/></td>
+                </tr>
+            </xsl:for-each>
+        </table>
 
 
 

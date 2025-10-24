@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<reisi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="reisi.xsd">
+
+	<reis airport="Nicosia International Airport" airline="South African Airways" number="SA9373">
+		<city city="Bin Tre">
+			<street>Nevada</street>
+		</city>
+		<currency>Dong</currency>
+		<transport>Flight</transport>
+		<transport_cost>200</transport_cost>
+		<accommodation>50</accommodation>
+		<excursions>30</excursions>
+		<rating>4.5</rating>
+	</reis>
+
+	<reis airport="Sur Airport" airline="United Airlines" number="UA1658">
+		<city city="San Andres">
+			<street>Waxwing</street>
+		</city>
+		<currency>Peso</currency>
+		<transport>Flight</transport>
+		<transport_cost>180</transport_cost>
+		<accommodation>60</accommodation>
+		<excursions>25</excursions>
+		<rating>4.2</rating>
+	</reis>
+
+	<reis airport="Tabora Airport" airline="Emirates" number="EK6819">
+		<city city="San Carlos">
+			<street>Butternut</street>
+		</city>
+		<currency>Peso</currency>
+		<transport>Flight</transport>
+		<transport_cost>220</transport_cost>
+		<accommodation>55</accommodation>
+		<excursions>40</excursions>
+		<rating>4.8</rating>
+	</reis>
+
+	<reis airport="Wanigela Airport" airline="Alitalia" number="AZ6191">
+		<city city="Ágios Stéfanos">
+			<street>Kingsford</street>
+		</city>
+		<currency>Euro</currency>
+		<transport>Flight</transport>
+		<transport_cost>250</transport_cost>
+		<accommodation>70</accommodation>
+		<excursions>35</excursions>
+		<rating>4.0</rating>
+	</reis>
+
+	<reis airport="Goulimime Airport" airline="Korean Air" number="KE7948">
+		<city city="Žiželice">
+			<street>Hoffman</street>
+		</city>
+		<currency>Koruna</currency>
+		<transport>Flight</transport>
+		<transport_cost>210</transport_cost>
+		<accommodation>65</accommodation>
+		<excursions>45</excursions>
+		<rating>4.6</rating>
+	</reis>
+
+	<reis airport="Ammaroo Airport" airline="Lufthansa" number="LH1888">
+		<city city="Osieczany">
+			<street>John Wall</street>
+		</city>
+		<currency>Zloty</currency>
+		<transport>Flight</transport>
+		<transport_cost>230</transport_cost>
+		<accommodation>75</accommodation>
+		<excursions>50</excursions>
+		<rating>4.3</rating>
+	</reis>
+
+	<reis airport="Heihe Airport" airline="Iberia" number="IB9662">
+		<city city="Valença do Douro">
+			<street>Dapin</street>
+		</city>
+		<currency>Euro</currency>
+		<transport>Flight</transport>
+		<transport_cost>240</transport_cost>
+		<accommodation>80</accommodation>
+		<excursions>60</excursions>
+		<rating>4.7</rating>
+	</reis>
+
+	<reis airport="Fagurhólsmýri Airport" airline="Lufthansa" number="LH8953">
+		<city city="Lahat">
+			<street>Susan</street>
+		</city>
+		<currency>Rupiah</currency>
+		<transport>Flight</transport>
+		<transport_cost>260</transport_cost>
+		<accommodation>70</accommodation>
+		<excursions>55</excursions>
+		<rating>4.4</rating>
+	</reis>
+
+	<reis airport="Dillon Airport" airline="SAS Scandinavian" number="SK8168">
+		<city city="Valença">
+			<street>Norway Maple</street>
+		</city>
+		<currency>Real</currency>
+		<transport>Flight</transport>
+		<transport_cost>190</transport_cost>
+		<accommodation>65</accommodation>
+		<excursions>30</excursions>
+		<rating>4.1</rating>
+	</reis>
+
+	<reis airport="Groennedal Heliport" airline="Avianca" number="AV6446">
+		<city city="Limbi">
+			<street>Daystar</street>
+		</city>
+		<currency>Franc</currency>
+		<transport>Flight</transport>
+		<transport_cost>210</transport_cost>
+		<accommodation>60</accommodation>
+		<excursions>50</excursions>
+		<rating>4.5</rating>
+	</reis>
+
+</reisi>
